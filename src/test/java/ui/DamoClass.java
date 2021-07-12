@@ -15,7 +15,7 @@ public class DamoClass {
 		// TODO Auto-generated method stub
 		
 
-		System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "\\chromedriver.exe");
 		
 
 		ChromeDriver driver = new ChromeDriver();
