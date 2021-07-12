@@ -29,7 +29,7 @@ public class DamoClass {
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 
                 File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-               File DestFile=new File("B:\\fff.png");
+               File DestFile=new File("screenshot.png");
                 try {
 					FileUtils.copyFile(SrcFile, DestFile);
 				} catch (IOException e) {
