@@ -21,6 +21,7 @@ public class DamoClass {
 		
 
 		ChromeOptions options = new ChromeOptions();
+		options.addArguments("window-size=1400,800");
 		options.addArguments("--headless");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
