@@ -17,7 +17,7 @@ public class DamoClass {
 		// TODO Auto-generated method stub
 		
 
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		
 
 		ChromeOptions options = new ChromeOptions();
