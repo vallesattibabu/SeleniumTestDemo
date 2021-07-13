@@ -1,5 +1,7 @@
 # SeleniumTestDemo
 
+OS: Windows
+
 Requirements:
 * JAVA needs to be installed in system and set environment variables.
 * Maven needs to be installed in system and set environment variables.
