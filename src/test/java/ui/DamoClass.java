@@ -1,6 +1,9 @@
 package ui;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -27,7 +30,27 @@ public class DamoClass {
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
 		ChromeDriver driver = new ChromeDriver(options);
-		driver.get("https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+		
+		String username = null;
+		String password = null;
+		String url = null;
+		String path=System.getProperty("user.dir");
+		 try (InputStream input = new FileInputStream(path+"/config.properties")) {
+
+	            Properties prop = new Properties();
+
+	        // load a properties file
+	        prop.load(input);
+	        username = prop.getProperty("username");
+	        password = prop.getProperty("password");
+            url = prop.getProperty("url");
+	        } catch (IOException ex) {
+	            ex.printStackTrace();
+	        }
+		
+		
+		driver.get(url);
+		driver.findElement(By.xpath("//input[@type='email']")).sendKeys(username);
 		//driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("77298");
 		//driver.findElement(By.xpath("//input[@name='login']")).sendKeys("gggg@ggg.com");
 		//driver.findElement(By.xpath("//input[@id='password']")).sendKeys("77298");
