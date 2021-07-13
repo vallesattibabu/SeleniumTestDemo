@@ -21,7 +21,7 @@ public class DamoClass {
 		
 
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		options.addArguments("headless");
 		options.addArguments("window-size=1400,800");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
@@ -39,6 +39,7 @@ public class DamoClass {
                File DestFile=new File("screenshot.png");
                 try {
 					FileUtils.copyFile(SrcFile, DestFile);
+			                System.out.println("**********Screenshot captured**********");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
