@@ -56,7 +56,7 @@ public class SFSclass {
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 
                 File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-               File DestFile=new File("B:\\sreenshots\\sonar-screenshot.png");
+               File DestFile=new File("sonar-screenshot.png");
                 try {
 					FileUtils.copyFile(SrcFile, DestFile);
 					System.out.println("**********Sonar_Screenshot_Captured**********");
@@ -83,7 +83,7 @@ public class SFSclass {
     	
     	String url2 = null;
 		String path=System.getProperty("user.dir");
-		 try (InputStream input = new FileInputStream(path+"/src/test/resources/config.properties")) {
+		 try (InputStream input = new FileInputStream(path+"config.properties")) {
 	            Properties prop = new Properties();
 	        // load a properties file
 	        prop.load(input);
@@ -99,7 +99,7 @@ public class SFSclass {
     	//screenshots
     	TakesScreenshot scrShot =((TakesScreenshot)driver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-       File DestFile=new File("B:\\sreenshots\\Fortify-screenshot.png");
+       File DestFile=new File("Fortify-screenshot.png");
         try {
 			FileUtils.copyFile(SrcFile, DestFile);
 			System.out.println("**********Fortify_Screenshot_Captured**********");
@@ -127,7 +127,7 @@ public class SFSclass {
     	
     	String url3 = null;
 		String path=System.getProperty("user.dir");
-		 try (InputStream input = new FileInputStream(path+"/src/test/resources/config.properties")) {
+		 try (InputStream input = new FileInputStream(path+"config.properties")) {
 	            Properties prop = new Properties();
 	        // load a properties file
 	        prop.load(input);
@@ -143,7 +143,7 @@ public class SFSclass {
     	//screenshots
     	TakesScreenshot scrShot =((TakesScreenshot)driver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-       File DestFile=new File("B:\\sreenshots\\Sync-screenshot.png");
+       File DestFile=new File("Sync-screenshot.png");
         try {
 			FileUtils.copyFile(SrcFile, DestFile);
 			System.out.println("**********Syn_Screenshot_Captured**********");
