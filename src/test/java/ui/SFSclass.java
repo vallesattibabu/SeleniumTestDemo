@@ -23,16 +23,16 @@ public class SFSclass {
 		
 		System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
 		
-	/*	ChromeOptions options = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
 		//options.addArguments("--headless");
 		options.addArguments("window-size=1400,800");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
-		ChromeDriver driver = new ChromeDriver(options); */
+		ChromeDriver driver = new ChromeDriver(options); 
 		
-		ChromeDriver driver = new ChromeDriver();
+		//ChromeDriver driver = new ChromeDriver();
 		//for config.xml
 		String url = null;
 		String path=System.getProperty("user.dir");
@@ -70,16 +70,16 @@ public class SFSclass {
 	public void Fortify() {
     	System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
     	
-    	/*	ChromeOptions options = new ChromeOptions();
+    		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
 		//options.addArguments("--headless");
 		options.addArguments("window-size=1400,800");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
-		ChromeDriver driver = new ChromeDriver(options); */
+		ChromeDriver driver = new ChromeDriver(options); 
     	
-    	ChromeDriver driver = new ChromeDriver();
+    	//ChromeDriver driver = new ChromeDriver();
     	
     	String url2 = null;
 		String path=System.getProperty("user.dir");
@@ -114,16 +114,16 @@ public class SFSclass {
     public void Syn() {
     	System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
     	
-    	/*	ChromeOptions options = new ChromeOptions();
+    		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
 		//options.addArguments("--headless");
 		options.addArguments("window-size=1400,800");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
-		ChromeDriver driver = new ChromeDriver(options); */
+		ChromeDriver driver = new ChromeDriver(options); 
     	
-    	ChromeDriver driver = new ChromeDriver();
+    	//ChromeDriver driver = new ChromeDriver();
     	
     	String url3 = null;
 		String path=System.getProperty("user.dir");
