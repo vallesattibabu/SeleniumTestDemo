@@ -21,7 +21,7 @@ public class SFSclass {
 @Test
 	public void Sonar() {
 		
-		System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
@@ -68,7 +68,7 @@ public class SFSclass {
 	}
     @Test
 	public void Fortify() {
-    	System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     	
     		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
@@ -112,7 +112,7 @@ public class SFSclass {
 	}
     @Test
     public void Syn() {
-    	System.setProperty("webdriver.chrome.driver", "A:\\Installed-Softwares\\eclip\\browserdrivers\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     	
     		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
